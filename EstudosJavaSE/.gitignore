@@ -1,0 +1,28 @@
+
+# Java - arquivos compilados
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.metadata/
+
+# Diretórios de compilação
+bin/
+target/
+build/
+out/
+
+# Logs
+*.log
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.swp
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
