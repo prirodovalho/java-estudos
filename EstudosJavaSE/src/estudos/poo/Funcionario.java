@@ -2,9 +2,9 @@ package estudos.poo;
 
 public class Funcionario {
 	
-	private String nome;
-	private String cargo;
-	private double salario;
+	protected String nome;
+	protected String cargo;
+	protected double salario;
 	
 	
 	public Funcionario(String nome, String cargo, Double salario) {
@@ -52,13 +52,11 @@ public class Funcionario {
 
         setSalario(salario * (1 + percentual / 100));
     }
-
-	
-	 public void TesteFuncionario() {
-	        System.out.println("Nome: " + nome);
-	        System.out.println("Cargo: " + cargo);
-	        System.out.println("Salário inicial: " + salario);	        
-	    }
+    
+    public double calcularBonus() {
+        return salario * 0.10;
+    } 
+    
 
 	/**
 	 * @param args
