@@ -29,4 +29,9 @@ public class Desenvolvedor extends Funcionario{
 	 * @param args
 	 */
 	
+	@Override
+	public void exibirDados() {
+	    super.exibirDados();
+	    System.out.println("Linguagem: " + getLinguagem());
+	}
 }

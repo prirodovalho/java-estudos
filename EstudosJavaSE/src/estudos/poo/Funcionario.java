@@ -57,6 +57,11 @@ public class Funcionario {
         return salario * 0.10;
     } 
     
+    public void exibirDados() {
+        System.out.println("Nome: " + getNome());
+        System.out.println("Cargo: " + getCargo());
+        System.out.println("Salário: R$ " + getSalario());
+    }
 
 	/**
 	 * @param args
@@ -65,9 +70,7 @@ public class Funcionario {
 		// TODO Auto-generated method stub
 		Funcionario funcionario = new Funcionario("Ana", "Analista de Sistemas", 7000.00);
 		
-		System.out.println("Nome: " + funcionario.getNome());
-        System.out.println("Cargo: " + funcionario.getCargo());
-        System.out.println("Salário inicial: " + funcionario.getSalario());
+		funcionario.exibirDados();
 		
 		funcionario.aumentarSalario(10);
 
