@@ -4,7 +4,7 @@ public class Desenvolvedor extends Funcionario{
 
 	private String linguagem;
 
-	public Desenvolvedor(String nome, String cargo, Double salario, String linguagem) {
+	public Desenvolvedor(String nome, String cargo, double salario, String linguagem) {
 		super(nome, cargo, salario);
 		this.linguagem = linguagem;
 	}
@@ -17,10 +17,6 @@ public class Desenvolvedor extends Funcionario{
 		this.linguagem = linguagem;
 	}
 
-	public void exibirLinguagem() {
-        System.out.println("Linguagem: " + linguagem);
-    }
-	
 	@Override
 	public double calcularBonus() {
 	    return getSalario() * 0.15;

@@ -2,12 +2,12 @@ package estudos.poo;
 
 public class Funcionario {
 	
-	protected String nome;
-	protected String cargo;
-	protected double salario;
+	private String nome;
+	private String cargo;
+	private double salario;
 	
 	
-	public Funcionario(String nome, String cargo, Double salario) {
+	public Funcionario(String nome, String cargo, double salario) {
         this.nome = nome;
         this.cargo = cargo;
         setSalario(salario);
@@ -29,7 +29,7 @@ public class Funcionario {
 		this.cargo = cargo;
 	}
 
-	public Double getSalario() {
+	public double getSalario() {
 		return salario;
 	}
 
@@ -54,7 +54,7 @@ public class Funcionario {
     }
     
     public double calcularBonus() {
-        return salario * 0.10;
+        return getSalario() * 0.10;
     } 
     
     public void exibirDados() {
@@ -62,20 +62,4 @@ public class Funcionario {
         System.out.println("Cargo: " + getCargo());
         System.out.println("Salário: R$ " + getSalario());
     }
-
-	/**
-	 * @param args
-	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Funcionario funcionario = new Funcionario("Ana", "Analista de Sistemas", 7000.00);
-		
-		funcionario.exibirDados();
-		
-		funcionario.aumentarSalario(10);
-
-        System.out.println("Salário após aumento: " + funcionario.getSalario());
-
-	}
-
 }
